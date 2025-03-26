@@ -30,8 +30,8 @@
             <TextBlock FontSize="25" Margin="5 5 5 5">Létrehozás</TextBlock>
             <TextBox Name="NameInput" Width="120" Height="40" Margin="-270,0,0,0" Background="MistyRose"></TextBox>
             <TextBox Name="AgeInput" Width="120" Height="40" Background="MistyRose" Margin="25,0,0,0"></TextBox>
-            <Button Name="Createbutton" Click="createPerson" Width="80" Height="50" Margin="402,40,112,50" >Click</Button>
-            <Button Name="Delteallbutton" Click="deleteallperson" Width="80" Height="50" Margin="504,40,10,50" Content="Deleteall" />
+            <Button  Click="createPerson" Width="80" Height="50" Margin="402,40,112,50" >Click</Button>
+            <Button  Click="deleteallperson" Width="80" Height="50" Margin="504,40,10,50" Content="Deleteall" />
         </Grid>
         <StackPanel Name="deleteButtonStack" Background="Yellow" Grid.Column="3" Grid.RowSpan="2">
             

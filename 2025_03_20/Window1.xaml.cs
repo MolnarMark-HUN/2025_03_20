@@ -84,16 +84,6 @@ namespace _2025_03_20
                         MessageBox.Show("Error deleting the person.");
                     }
                 };
-                editbutton.Click += async (s, e) =>
-                {
-                    bool resault = await connection.update(name, Convert.ToInt32(age));
-                    if (resault)
-                    {
-                        NameInput.Text = "";
-                        AgeInput.Text = "";
-                        deleteB.Visibility = Visibility.Hidden;
-                    }
-                };
 
                 deleteButtonStack.Children.Add(deleteB);
                 deleteButtonStack.Children.Add(editbutton);

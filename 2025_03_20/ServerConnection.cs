@@ -168,7 +168,7 @@ namespace _2025_03_20
             var jsonInfo = new
             {
                 deleteName = name
-        };
+            };
             try
             {
                 string jsonStringified = JsonConvert.SerializeObject(jsonInfo);
@@ -181,6 +181,7 @@ namespace _2025_03_20
             }
             catch (Exception e)
             {
+                MessageBox.Show(e.Message);
             }
 
             return false;
@@ -225,6 +226,7 @@ namespace _2025_03_20
             }
             catch (Exception e)
             {
+                MessageBox.Show(e.Message);
             }
 
             return false;
