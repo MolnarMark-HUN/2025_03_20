@@ -1,0 +1,40 @@
+﻿<Window x:Class="_2025_03_20.Window1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:_2025_03_20"
+        mc:Ignorable="d"
+        Title="Window1" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions >
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+
+        <Grid Grid.Row="0" Grid.Column="0" Grid.RowSpan="3" Background="Black"></Grid>
+        <StackPanel Name="NameStack" Grid.Row="0" Grid.Column="1" Grid.RowSpan="2" Background="Aqua">
+            <TextBlock FontSize="20" VerticalAlignment="Center" HorizontalAlignment="Center">Name</TextBlock>
+        </StackPanel>
+        <StackPanel Name="AgeStack" Grid.Row="0" Grid.Column="2" Grid.RowSpan="2" Background="Red">
+            <TextBlock FontSize="20" VerticalAlignment="Center" HorizontalAlignment="Center">Age</TextBlock>
+        </StackPanel>
+        <Grid Grid.Row="3" Grid.Column="1" Grid.ColumnSpan="3" Background="Green">
+            <TextBlock FontSize="25" Margin="5 5 5 5">Létrehozás</TextBlock>
+            <TextBox Name="NameInput" Width="120" Height="40" Margin="-270,0,0,0" Background="MistyRose"></TextBox>
+            <TextBox Name="AgeInput" Width="120" Height="40" Background="MistyRose" Margin="25,0,0,0"></TextBox>
+            <Button Name="Createbutton" Click="createPerson" Width="80" Height="50" Margin="402,40,112,50" >Click</Button>
+            <Button Name="Delteallbutton" Click="deleteallperson" Width="80" Height="50" Margin="504,40,10,50" Content="Deleteall" />
+        </Grid>
+        <StackPanel Name="deleteButtonStack" Background="Yellow" Grid.Column="3" Grid.RowSpan="2">
+            
+        </StackPanel>
+    </Grid>
+</Window>
